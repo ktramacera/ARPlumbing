@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.site {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+header,footer{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+
+}
+
+header h2{
+    font-size: 30px;
+}
+
+img{
+    float: left;
+    width: 250px;
+    height: 50px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+h3 {
+    text-align: center;
+    font-size: 26px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    margin-bottom: 10rem;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 8rem;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 40px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-item h5 {
+    font-size: 17px;
+}
+
+.grid-item p {
+    margin: 5px;
+    font-size: 16px;
+}
+
+
+
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+
+.container1 {
+    display: flex;
+    gap: 10px;
+}
+
+.column1 {
+    width: 50%;
+}
+
+.column1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.fillcolumn{
+    width: 4%;
+}
+
+.column2, .column3 {
+    width: 23%;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .column1, .column2, .column3 {
+        width: 100%;
+    }
+}
+
+
+
+/* Contact Section */
+.contact-container{
+    height: auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(237 28 37/0.9);
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #000;
+    border-radius: 20px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 3px solid #ED1C25;
+}
+
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ED1C25;
+    gap: 10px;
+    border: none;  
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.contact-left button img{
+    height: 15px;
+}
+
+.contact-right img{
+    width: 500px;
+}
+
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80lvw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+.footer .info {
+    text-align: right;
+}
+
+.footer .info p {
+    text-align: left;
+    line-height: 1.5;
+    margin: 5px 0;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.footericon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
