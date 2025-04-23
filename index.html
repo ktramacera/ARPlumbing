@@ -1,134 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A&R Plumbing LLC</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&R Plumbing LLC</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="ARPlumbing.css">
-    </head>
-    <body>
-        <div class="site">
-            <header>
-                <div class="header">
-                    <h2><img src="ARPLogo.svg" alt="logo"/></h2>
-                </div>
-                
-                <nav>
-                    <ul>
-                        <li><a href="#about">about us</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section id="about" class="container">
-                    <h3>Who Are We?</h3>
-                    <p>Over 40 years' experience, fully insured, licensed, owned and operated by Anthony J. Tramacera. Our company provides quality plumbing and drain cleaning services for the Utica area and surrounding suburbs. In addition to being licensed in Utica, A&R Plumbing LLC is also licensed in Ilion. Our family provides all your small plumbing and drain cleaning needs.</p>
-                </section>
-        
-                <section id="services" class="container">
-                    <h3>How Can We Help You?</h3>
-                    <div class="grid-container"> 
-                        <div class="grid-item"> 
-                            <img src="RESIDENTIAL_AND_COMMERCIAL.png" alt="Residential and Commercial"> 
-                            <h5>RESIDENTIAL AND COMMERCIAL</h5>
-                            <p>Plumbing repairs offerred for both residential and small commercial jobs.</p> 
-                        </div> 
-                        <div class="grid-item"> 
-                            <img src="DRAIN_AND_SEWER.png" alt="Drain and Sewer">
-                            <h5>DRAIN AND SEWER</h5> 
-                            <p>Drain and sewer cleaning for up to 4 inch pipe.</p> 
-                        </div> 
-                        <div class="grid-item"> 
-                            <img src="INSTALL.png" alt="Install"> 
-                            <h5>INSTALL</h5>
-                            <p>Install 40 and 50 gallon gas and electric hot water heaters, toilets, and faucets.</p> 
-                        </div> 
-                    </div> 
-                    <div class="grid-container"> 
-                        <div class="grid-item"> 
-                            <img src="REPLACE2.png" alt="Replace"> 
-                            <h5>REPLACE</h5>
-                            <p>Replace sump pumps and garbage disposals.</p> 
-                        </div> 
-                        <div class="grid-item"> 
-                            <img src="CERTIFIED3.png" alt="Certified">
-                            <h5>CERTIFIED</h5> 
-                            <p>Certified in Gastite and WARDflex.</p> 
-                        </div> 
-                        <div class="grid-item"> 
-                            <img src="FREE_ESTIMATES.png" alt="Free Estimates"> 
-                            <h5>FREE ESTIMATES</h5>
-                            <p>Receive a free estimate today!<br>*Estimates valid for 7 days</p> 
-                        </div> 
-                    </div> 
-                </section>
+    <link rel="stylesheet" href="TEST.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="ARPLogo.svg" alt="ARP Logo" class="logo-img">
+      </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>      
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+  </nav>
 
-                <section id="servicearea" class="container">
-                    <h3>Who Do We Service?</h3><br>
-                    <div class="container1">
-                        <div class="column1">
-                            <img src="map.png" alt="map">
-                        </div>
-                        <div class="fillcolumn">
-                            
-                        </div>
-                        <div class="column2">
-                            <ul>
-                                <br><li><img src="mapicon.png" alt="mapicon" class="icon">New York Mills</li><br>
-                                <li><img src="mapicon.png" alt="mapicon" class="icon">Whitesboro</li><br>
-                                <li><img src="mapicon.png" alt="mapicon" class="icon">Yorkville</li><br>
-                                <li><img src="mapicon.png" alt="mapicon" class="icon">Utica</li>
-                            </ul>
-                        </div>
-                        <div class="column3">
-                            <ul>
-                                <br><li><img src="mapicon.png" alt="mapicon" class="icon">New Hartford</li><br>
-                                <li><img src="mapicon.png" alt="mapicon" class="icon">Herkimer</li><br>
-                                <li><img src="mapicon.png" alt="mapicon" class="icon">Sauquoit</li><br>
-                                <li><img src="mapicon.png" alt="mapicon" class="icon">Ilion</li>
-                            </ul>
-                        </div>
-                    </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
 
-                </section>
-
-                <p><br><br><br><br><br></p>
-
-                <section id="contact" class="container">
-                    
-                    <div class="contact-container">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                            <div class="contact-left-title">
-                                <h2>Contact Us<hr style="width: 100%;"></h2> 
-                            </div>
-                            <input type="hidden" name="access_key" value="e3a34417-ce55-4c12-827d-bd6f0d432c3b">
-                            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                        
-                    </div>
-        
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="logo">
-                    <img src="ARPLogo.svg" alt="Logo">
-                </div>
-                <div class="info">
-                    <p><img src="Clock_icon.png" alt="" class="footericon"><strong>Business Hours:</strong>  Mon-Fri (10 AM - 8 PM)</p>
-                    <p><img src="Phone_icon.png" alt="" class="footericon"><strong>Phone:</strong>  315-768-6668</p>
-                    <p><img src="Email_icon.png" alt="" class="footericon"><strong>Email:</strong>  aandrplumbingcny@gmail.com</p>
-                </div>
-            </footer>
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <main>
+    <section id="about" class="container">
+        <h3>Who Are We?</h3>
+        <p>Over 40 years' experience, fully insured, licensed, owned and operated by Anthony J. Tramacera. Our company provides quality plumbing and drain cleaning services for the Utica area and surrounding suburbs. In addition to being licensed in Utica, A&R Plumbing LLC is also licensed in Ilion. Our family provides all your small plumbing and drain cleaning needs.</p>
+    </section>
+    <section id="services" class="container">
+        <h3>How Can We Help You?</h3>
+        <section class="feature-grid">
+            <div class="feature-item">
+              <img src="RESIDENTIAL_AND_COMMERCIAL.png" alt="Residential and Commercial">
+              <h4>RESIDENTIAL AND COMMERCIAL</h4>
+              <p>Plumbing repairs offerred for both residential and small commercial jobs.</p>
+            </div>
+            <div class="feature-item">
+              <img src="DRAIN_AND_SEWER.png" alt="Drain and Sewer">
+              <h4>DRAIN AND SEWER</h4>
+              <p>Drain and sewer cleaning for up to 4 inch pipe.</p>
+            </div>
+            <div class="feature-item">
+              <img src="INSTALL.png" alt="Install">
+              <h4>INSTALL</h4>
+              <p>Install 40 and 50 gallon gas and electric hot water heaters, toilets, and faucets.</p>
+            </div>
+            <div class="feature-item">
+              <img src="REPLACE2.png" alt="Replace">
+              <h4>REPLACE</h4>
+              <p>Replace sump pumps and garbage disposals.</p>
+            </div>
+            <div class="feature-item">
+              <img src="CERTIFIED3.png" alt="Certified">
+              <h4>CERTIFIED</h4>
+              <p>Certified in Gastite and WARDflex.</p>
+            </div>
+            <div class="feature-item">
+              <img src="FREE_ESTIMATES.png" alt="Free Estimates">
+              <h4>FREE ESTIMATES</h4>
+              <p>Receive a free estimate today!<br>*Estimates valid for 7 days</p>
+            </div>
+        </section>
+    </section>
+    <section id="servicearea" class="container">
+        <h3>Who Do We Service?</h3>
+        <div class="serviceareacontainer">
+            <div class="column1">
+                <img src="map.png" alt="map">
+            </div>
+            <div class="column2">
+                <ul>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">New York Mills</li><br>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">Whitesboro</li><br>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">Yorkville</li><br>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">Utica</li>
+                </ul>
+            </div>
+            <div class="column3">
+                <ul>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">New Hartford</li><br>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">Herkimer</li><br>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">Sauquoit</li><br>
+                    <li><img src="mapicon.png" alt="mapicon" class="icon">Ilion</li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </section>
+    <section id="contact" class="container">
+        <section id="contactus" class="container">
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Contact Us<hr style="width: 100%;"></h2> 
+                    </div>
+                    <input type="hidden" name="access_key" value="e3a34417-ce55-4c12-827d-bd6f0d432c3b">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="logo">
+      <img src="ARPLogo.svg" alt="ARP Logo" class="logo-img">
+    </div>
+    <div class="info">
+        <p><img src="Clock_icon.png" alt="" class="footericon"><strong>Business Hours:</strong>  Mon-Fri (10 AM - 8 PM)</p>
+        <p><img src="Phone_icon.png" alt="" class="footericon"><strong>Phone:</strong>  315-768-6668</p>
+        <p><img src="Email_icon.png" alt="" class="footericon"><strong>Email:</strong>  aandrplumbingcny@gmail.com</p>
+    </div>
+  </footer>
+  
+</body>
 </html>
